@@ -8,7 +8,7 @@
 
 body {
 	background-color: #f5f7fa;
-
+	display: flex;
 	font-family: 'Montserrat', sans-serif;
 	height: 100%;
 }
@@ -24,23 +24,23 @@ body {
 .project {
 	.ol-list {
 		padding: 5px 0;
-		transition: color .3s;
-		
+		transition: color 0.3s;
+
 		p {
 			font-size: 15px;
 		}
-		
+
 		a {
 			&:hover {
 				color: rgb(46, 190, 201);
 			}
 		}
-
 	}
 }
 
 aside {
-	width: 400px;
+	display: block;
+	max-width: 400px;
 	background-color: #1e2939;
 	.sp-color {
 		color: white;
@@ -52,7 +52,6 @@ aside {
 		color: #fff;
 	}
 
-	
 	img {
 		margin-top: 20px;
 		height: 500px;
@@ -98,7 +97,7 @@ aside {
 }
 
 .main {
-	
+	max-width: 800px;
 	padding-top: 50px;
 	h2 {
 		color: black;
@@ -138,7 +137,6 @@ aside {
 	}
 }
 
-
 .work-experience {
 	margin-left: 50px;
 	h2 {
@@ -177,5 +175,18 @@ aside {
 	}
 	.work-time {
 		color: gray;
+	}
+}
+
+.text-rodo {
+	height: 200px;
+	width: 100%;
+	
+
+	.text {
+		position: absolute;
+		margin: 10px;
+		text-align: center;
+		
 	}
 }
